@@ -179,3 +179,27 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden;
 }
+
+h1, h2, h3, h4, p, li, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.wrapper {
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 100vh;
+  background: linear-gradient(#251244, #6c0c4b);
+}
