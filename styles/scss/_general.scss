@@ -1,46 +1,17 @@
-// Stripping styles
-h1,h2,h3,h4,p,li,ul {
-    margin: 0;
-    padding:0;
-}
-
-ul,li {
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-// Wrapper
-.wrapper {
-    max-width: 1140px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-// fonts
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-size: 2.1rem;
-    font-family: $mainFont;
-    // color: #ffffff;
-}
-
 // common styles
 .button {
     font-family: $buttonFont;
     font-weight: bold;
     font-size: 2rem;
+    font-weight: normal;
     background: #02b197;
     border-radius: 2px;
     box-shadow: 0 4px 0 #01907a;
     padding: 5px 10px;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    border: none;
+    color: #ffffff;
+    min-width: 15rem;
 }
 
 .profilePhoto {
@@ -68,6 +39,9 @@ img {
     height: 1px;
     width: 100px;
     margin: 20px auto;
+    &.greenLine {
+        background: #02b197;
+    }
 }
 
 h2 {

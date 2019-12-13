@@ -213,11 +213,15 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 2rem;
+  font-weight: normal;
   background: #02b197;
   border-radius: 2px;
   box-shadow: 0 4px 0 #01907a;
   padding: 5px 10px;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  min-width: 15rem;
 }
 
 .profilePhoto {
@@ -245,6 +249,9 @@ img {
   height: 1px;
   width: 100px;
   margin: 20px auto;
+}
+.fancyLine.greenLine {
+  background: #02b197;
 }
 
 h2 {
@@ -355,4 +362,66 @@ header nav h2 {
   background: #93499f;
   padding: 10px;
   border-radius: 4px;
+}
+
+.contact {
+  background: linear-gradient(rgba(108, 12, 75, 0.75), rgba(37, 18, 68, 0.75)), url(../assets/colin-maynard-CoB45gP32rc-unsplash.jpg);
+  color: #ffffff;
+}
+.contact i {
+  color: #03b197;
+  font-size: 3rem;
+  margin-right: 30px;
+}
+.contact h3 {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+}
+.contact .flexContainer {
+  margin-top: 60px;
+}
+.contact .flexContainer, .contact li {
+  display: flex;
+  width: 100%;
+}
+.contact ul {
+  margin-right: 20px;
+  width: calc(100% / 3);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact li {
+  align-items: flex-start;
+}
+.contact li > div {
+  flex-grow: 1;
+}
+.contact input, .contact textarea {
+  background: inherit;
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+  border: 1.5px solid #ffffff;
+  padding: 10px 20px;
+}
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.contact form input {
+  width: calc(50% - 10px);
+}
+.contact form input:first-of-type {
+  margin-right: 20px;
+}
+.contact form textarea {
+  width: 100%;
+  margin-top: 20px;
+}
+.contact form .button {
+  margin-top: 20px;
 }
