@@ -1,4 +1,57 @@
 header {
     min-height: 100vh;
-    background: linear-gradient(#251244,#6c0c4b);
+    background: linear-gradient(rgba(37, 18, 68,0.75),rgba(108, 12, 75,0.75)), url(../assets/colin-maynard-CoB45gP32rc-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 1.9rem;
+        border-bottom: 1.5px solid rgba(255,255,255,.32);
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            li {
+                margin: 0 20px;
+            }
+            li:last-of-type {
+                margin: 0;
+            }
+        }
+        h2 {
+            font-size: 3.6rem;
+            font-family: $logoFont;
+        }
+    }
+}
+
+.headerContent {
+    text-align: center;
+    p {
+        font-family: $buttonFont;
+        font-size: 3rem;
+    }
+    h1 {
+        font-family: $headerFont;
+        font-weight: bold;
+        font-size: 7.3rem;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-family: $fancyFont;
+        font-size: 4.3rem;
+        text-transform: capitalize;
+    }
 }

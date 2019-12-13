@@ -191,6 +191,7 @@ ul, li {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -199,7 +200,80 @@ a {
   margin: 0 auto;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.1rem;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  background: #02b197;
+  border-radius: 2px;
+  box-shadow: 0 4px 0 #01907a;
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+
 header {
   min-height: 100vh;
-  background: linear-gradient(#251244, #6c0c4b);
+  background: linear-gradient(rgba(37, 18, 68, 0.75), rgba(108, 12, 75, 0.75)), url(../assets/colin-maynard-CoB45gP32rc-unsplash.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.9rem;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.32);
+}
+header nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li:last-of-type {
+  margin: 0;
+}
+header nav h2 {
+  font-size: 3.6rem;
+  font-family: "Pacifico", cursive;
+}
+
+.headerContent {
+  text-align: center;
+}
+.headerContent p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+}
+.headerContent h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 7.3rem;
+  text-transform: uppercase;
+}
+.headerContent h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 4.3rem;
+  text-transform: capitalize;
 }

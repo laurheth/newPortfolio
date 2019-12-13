@@ -10,6 +10,7 @@ ul,li {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 // Wrapper
@@ -17,4 +18,27 @@ a {
     max-width: 1140px;
     width: 90%;
     margin: 0 auto;
+}
+
+// fonts
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2.1rem;
+    font-family: $mainFont;
+    // color: #ffffff;
+}
+
+// common styles
+.button {
+    font-family: $buttonFont;
+    font-weight: bold;
+    font-size: 2rem;
+    background: #02b197;
+    border-radius: 2px;
+    box-shadow: 0 4px 0 #01907a;
+    padding: 5px 10px;
+    text-transform: capitalize;
 }
