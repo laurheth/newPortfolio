@@ -1,0 +1,29 @@
+footer {
+    background: #290e38;
+    color: #6f5b8f;
+    padding: 15px 0;
+    .wrapper {
+        display: flex;
+        align-items: center;
+        > * {
+            width: calc(100% / 3);
+        }
+        h2 {
+            text-align: left;
+            font-family: $logoFont;
+            text-transform: capitalize;
+            font-size: 3.6rem;
+        }
+        p {
+            text-align: right;
+            font-size: 2rem;
+        }
+        div {
+            text-align: center;
+            font-size: 3rem;
+            i {
+                margin: 0 5px;
+            }
+        }
+    }
+}

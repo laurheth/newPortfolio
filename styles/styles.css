@@ -303,6 +303,7 @@ header nav ul li:last-of-type {
 header nav h2 {
   font-size: 3.6rem;
   font-family: "Pacifico", cursive;
+  text-transform: capitalize;
 }
 
 .headerContent {
@@ -365,7 +366,8 @@ header nav h2 {
 }
 
 .contact {
-  background: linear-gradient(rgba(108, 12, 75, 0.75), rgba(37, 18, 68, 0.75)), url(../assets/colin-maynard-CoB45gP32rc-unsplash.jpg);
+  background: linear-gradient(rgba(108, 12, 75, 0.75), rgba(37, 18, 68, 0.75)), url(../assets/beach-bottle-cold-daylight-292426.jpg);
+  background-size: cover;
   color: #ffffff;
 }
 .contact i {
@@ -424,4 +426,34 @@ header nav h2 {
 }
 .contact form .button {
   margin-top: 20px;
+}
+
+footer {
+  background: #290e38;
+  color: #6f5b8f;
+  padding: 15px 0;
+}
+footer .wrapper {
+  display: flex;
+  align-items: center;
+}
+footer .wrapper > * {
+  width: calc(100% / 3);
+}
+footer .wrapper h2 {
+  text-align: left;
+  font-family: "Pacifico", cursive;
+  text-transform: capitalize;
+  font-size: 3.6rem;
+}
+footer .wrapper p {
+  text-align: right;
+  font-size: 2rem;
+}
+footer .wrapper div {
+  text-align: center;
+  font-size: 3rem;
+}
+footer .wrapper div i {
+  margin: 0 5px;
 }
