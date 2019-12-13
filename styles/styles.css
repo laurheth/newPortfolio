@@ -196,7 +196,7 @@ a {
 
 .wrapper {
   max-width: 1140px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -218,6 +218,45 @@ body {
   box-shadow: 0 4px 0 #01907a;
   padding: 5px 10px;
   text-transform: capitalize;
+}
+
+.profilePhoto {
+  display: inline-block;
+  width: 220px;
+  margin: 40px 0;
+}
+.profilePhoto img {
+  border-radius: 50%;
+}
+
+.itemContainer {
+  width: 200px;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.fancyLine {
+  background: #530f3d;
+  height: 1px;
+  width: 100px;
+  margin: 20px auto;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section {
+  padding: 80px 0;
 }
 
 header {
@@ -276,4 +315,44 @@ header nav h2 {
   font-family: "Satisfy", cursive;
   font-size: 4.3rem;
   text-transform: capitalize;
+}
+
+.about {
+  text-align: center;
+}
+.about .socialLinks {
+  margin-top: 60px;
+}
+.about .socialLinks a {
+  font-size: 3rem;
+  color: #949494;
+  padding: 0 5px;
+  transition: 0.3s;
+}
+.about .socialLinks a:hover, .about .socialLinks a:focus {
+  color: #60c7ac;
+}
+
+.skills {
+  background: #F7F7F7;
+}
+.skills ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+.skills ul:nth-of-type(2) {
+  margin-bottom: 0;
+}
+.skills ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills ul li i {
+  font-size: 5rem;
+  color: #F7F7F7;
+  background: #93499f;
+  padding: 10px;
+  border-radius: 4px;
 }

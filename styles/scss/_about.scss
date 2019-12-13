@@ -1,0 +1,15 @@
+.about {
+    text-align: center;
+    .socialLinks {
+        margin-top: 60px;
+        a {
+            font-size: 3rem;
+            color: #949494;
+            padding: 0 5px;
+            transition: $transition;
+            &:hover, &:focus {
+                color: #60c7ac;
+            }
+        }
+    }
+}

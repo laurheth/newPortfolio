@@ -16,7 +16,7 @@ a {
 // Wrapper
 .wrapper {
     max-width: 1140px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -41,4 +41,43 @@ body {
     box-shadow: 0 4px 0 #01907a;
     padding: 5px 10px;
     text-transform: capitalize;
+}
+
+.profilePhoto {
+    display: inline-block;
+    width: 220px;
+    margin: 40px 0;
+    img {
+        border-radius: 50%;
+    }
+}
+
+.itemContainer {
+    width: 200px;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.fancyLine {
+    background: #530f3d;
+    height: 1px;
+    width: 100px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-family: $headerFont;
+    font-weight: 500;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section {
+    padding: 80px 0;
 }
