@@ -26,4 +26,10 @@ footer {
             }
         }
     }
+    a {
+        transition: $transition;
+    }
+    a:hover, a:focus {
+        color: #3bafa3;
+    }
 }

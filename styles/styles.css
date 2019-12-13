@@ -457,3 +457,9 @@ footer .wrapper div {
 footer .wrapper div i {
   margin: 0 5px;
 }
+footer a {
+  transition: 0.3s;
+}
+footer a:hover, footer a:focus {
+  color: #3bafa3;
+}
