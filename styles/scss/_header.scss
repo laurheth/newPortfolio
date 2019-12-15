@@ -1,12 +1,16 @@
 header {
     min-height: 100vh;
-    background: linear-gradient(rgba(37, 18, 68,0.75),rgba(108, 12, 75,0.75)), url(../assets/colin-maynard-CoB45gP32rc-unsplash.jpg);
-    background-size: cover;
+    background: linear-gradient(rgba(37, 18, 68,0.75),rgba(108, 12, 75,0.75));
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    .background {
+        background: url(../assets/colin-maynard-CoB45gP32rc-unsplash.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
     nav {
         position: absolute;
         top: 0;
