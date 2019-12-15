@@ -1,0 +1,44 @@
+.portfolio {
+    .grid {
+        display: grid;
+        grid-template-rows: 2fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        grid-auto-flow: column;
+        margin-top: 50px;
+    }
+    .itemContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &:nth-of-type(4n+1), &:nth-of-type(4) {
+            grid-row: span 2;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            z-index: 10;
+            background: linear-gradient(rgba(37, 18, 68,0.75),rgba(108, 12, 75,0.75));
+            opacity: 0;
+            transition: $transition;
+            &:hover, &:focus-within {
+                opacity: 1;
+            }
+        }
+    }
+}
