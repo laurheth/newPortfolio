@@ -202,6 +202,7 @@ a {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -460,10 +461,15 @@ header nav h2 {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .contact li {
   align-items: flex-start;
+  margin-bottom: 20px;
+}
+.contact li i {
+  width: 30px;
+  flex-shrink: 0;
 }
 .contact li > div {
   flex-grow: 1;
