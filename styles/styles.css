@@ -224,6 +224,11 @@ body {
   border: none;
   color: #ffffff;
   min-width: 20rem;
+  transition: 0.3s;
+}
+.button:hover, .button:focus {
+  background: #93499f;
+  box-shadow: 0 4px 0 #73397c;
 }
 
 .profilePhoto {
@@ -301,24 +306,50 @@ header nav {
 }
 header nav .wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 header nav ul {
   display: flex;
-  align-items: center;
   text-transform: uppercase;
-}
-header nav ul li {
-  margin: 0 20px;
-}
-header nav ul li:last-of-type {
-  margin: 0;
 }
 header nav h2 {
   font-size: 3.6rem;
   font-family: "Pacifico", cursive;
   text-transform: capitalize;
+  margin: auto 0;
+}
+
+nav li {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+nav li:last-of-type {
+  margin-right: 0;
+}
+nav li a {
+  padding: 18px 0;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+nav li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  z-index: 0;
+  background: #03b197;
+  transition: 0.3s;
+  transform: scaleX(0);
+}
+nav li a:hover::after, nav li a:focus::after {
+  transform: scaleX(1);
 }
 
 .headerContent {
@@ -480,11 +511,21 @@ header nav h2 {
   font-family: "Titillium Web", sans-serif;
   border: 1.5px solid #ffffff;
   padding: 10px 20px;
+  flex-grow: 0;
+  transition: 0.3s;
+}
+.contact input:focus, .contact textarea:focus {
+  border-color: #04e3c2;
+}
+.contact textarea {
+  resize: vertical;
 }
 .contact form {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  align-items: flex-start;
+  margin-bottom: auto;
 }
 .contact form input {
   width: calc(50% - 10px);

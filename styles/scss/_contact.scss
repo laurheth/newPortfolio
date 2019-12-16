@@ -51,11 +51,21 @@
         font-family: $mainFont;
         border: 1.5px solid #ffffff;
         padding: 10px 20px;
+        flex-grow: 0;
+        transition: $transition;
+        &:focus {
+            border-color: lighten(#03b197,10%);
+        }
+    }
+    textarea {
+        resize: vertical;
     }
     form {
         display: flex;
         flex-wrap: wrap;
         flex-grow: 1;
+        align-items: flex-start;
+        margin-bottom: auto;
         input {
             width: calc(50% - 10px);
             &:first-of-type {

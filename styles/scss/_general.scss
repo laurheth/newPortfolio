@@ -13,6 +13,11 @@
     border: none;
     color: #ffffff;
     min-width: 20rem;
+    transition: $transition;
+    &:hover, &:focus {
+        background: #93499f;
+        box-shadow: 0 4px 0 darken(#93499f,10%);
+    }
 }
 
 .profilePhoto {
