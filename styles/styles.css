@@ -628,19 +628,6 @@ footer a:hover, footer a:focus {
     width: 100%;
     padding: 0 20px;
   }
-}
-@media (max-width: 750px) {
-  .portfolio .grid {
-    display: flex;
-    flex-direction: column;
-    grid-gap: 0;
-  }
-  .portfolio .itemContainer {
-    margin-top: 40px;
-  }
-  .portfolio .itemContainer .overlay {
-    padding: 80px 20px;
-  }
 
   .contact ul {
     width: 100%;
@@ -656,6 +643,19 @@ footer a:hover, footer a:focus {
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+}
+@media (max-width: 750px) {
+  .portfolio .grid {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0;
+  }
+  .portfolio .itemContainer {
+    margin-top: 40px;
+  }
+  .portfolio .itemContainer .overlay {
+    padding: 80px 20px;
   }
 
   .about .flexRow {
