@@ -9,6 +9,10 @@
         .grid {
             display: flex;
             flex-direction: column;
+            grid-gap: 0;
+        }
+        .itemContainer {
+            margin-top: 40px;
         }
         .itemContainer .overlay {
             padding: 80px 20px;
@@ -33,6 +37,17 @@
             }
         }
     }
+    .about {
+        .flexRow {
+            flex-direction: column;
+            .socialLinks {
+                text-align: center;
+            }
+            .column {
+                margin: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 650px) {
@@ -45,6 +60,11 @@
         nav .wrapper {
             flex-direction: column;
             align-items: center;
+        }
+    }
+    .skills {
+        ul {
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
         }
     }
 }
@@ -73,10 +93,6 @@
 
     .headerContent {
         margin: auto;
-    }
-
-    .skills ul li i {
-        font-size: 5vw;
     }
 
     .contact ul {
@@ -115,5 +131,16 @@
         h2 {
             font-size: 2.7rem;
         }
+    }
+}
+
+@media (max-height: 500px) {
+    header {
+        flex-direction: column;
+    }
+    header nav {
+        position: static;
+        width: 100%;
+        text-align: center;
     }
 }

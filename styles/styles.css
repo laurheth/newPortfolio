@@ -389,6 +389,7 @@ nav li a:hover::after, nav li a:focus::after {
 .about .profilePhoto {
   display: inline-block;
   width: 30%;
+  min-width: 200px;
   margin: 40px 0;
   flex-shrink: 0;
 }
@@ -406,31 +407,41 @@ nav li a:hover::after, nav li a:focus::after {
   background: #F7F7F7;
 }
 .skills ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 60px 0;
-}
-.skills ul:nth-of-type(2) {
-  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 20px;
 }
 .skills ul li {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.skills ul li .iconBox {
+  background: #93499f;
+  padding: 10px;
+  border-radius: 4px;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .skills ul li i {
   font-size: 5rem;
   color: #F7F7F7;
-  background: #93499f;
-  padding: 10px;
-  border-radius: 4px;
+}
+.skills ul li p {
+  margin-top: 10px;
 }
 
 .portfolio .grid {
   display: grid;
   grid-template-rows: 2fr 1fr 2fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 40px;
   grid-auto-flow: column;
   margin-top: 50px;
 }
@@ -439,6 +450,7 @@ nav li a:hover::after, nav li a:focus::after {
   width: 100%;
   height: 100%;
   display: flex;
+  border: 4px #02b197 solid;
 }
 .portfolio .itemContainer img {
   width: 100%;
@@ -615,6 +627,10 @@ footer a:hover, footer a:focus {
   .portfolio .grid {
     display: flex;
     flex-direction: column;
+    grid-gap: 0;
+  }
+  .portfolio .itemContainer {
+    margin-top: 40px;
   }
   .portfolio .itemContainer .overlay {
     padding: 80px 20px;
@@ -635,6 +651,16 @@ footer a:hover, footer a:focus {
     text-align: center;
     align-items: center;
   }
+
+  .about .flexRow {
+    flex-direction: column;
+  }
+  .about .flexRow .socialLinks {
+    text-align: center;
+  }
+  .about .flexRow .column {
+    margin: 0;
+  }
 }
 @media (max-width: 650px) {
   header .headerContent h1 {
@@ -643,6 +669,10 @@ footer a:hover, footer a:focus {
   header nav .wrapper {
     flex-direction: column;
     align-items: center;
+  }
+
+  .skills ul {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
 @media (max-width: 500px) {
@@ -668,10 +698,6 @@ footer a:hover, footer a:focus {
 
   .headerContent {
     margin: auto;
-  }
-
-  .skills ul li i {
-    font-size: 5vw;
   }
 
   .contact ul {
@@ -706,5 +732,16 @@ footer a:hover, footer a:focus {
   }
   header .headerContent h2 {
     font-size: 2.7rem;
+  }
+}
+@media (max-height: 500px) {
+  header {
+    flex-direction: column;
+  }
+
+  header nav {
+    position: static;
+    width: 100%;
+    text-align: center;
   }
 }
