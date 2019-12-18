@@ -460,6 +460,10 @@ nav li a:hover::after, nav li a:focus::after {
 .portfolio .itemContainer:nth-of-type(4n+1), .portfolio .itemContainer:nth-of-type(4) {
   grid-row: span 2;
 }
+.portfolio .itemContainer:hover .overlay, .portfolio .itemContainer:focus-within .overlay, .portfolio .itemContainer.selected .overlay {
+  opacity: 1;
+  z-index: 10;
+}
 .portfolio .itemContainer .overlay {
   display: flex;
   flex-direction: column;
@@ -468,13 +472,10 @@ nav li a:hover::after, nav li a:focus::after {
   color: #ffffff;
   padding: 40px 20px;
   text-align: center;
-  z-index: 10;
+  z-index: -5;
   background: linear-gradient(rgba(37, 18, 68, 0.75), rgba(108, 12, 75, 0.75));
   opacity: 0;
   transition: 0.3s;
-}
-.portfolio .itemContainer .overlay:hover, .portfolio .itemContainer .overlay:focus-within {
-  opacity: 1;
 }
 .portfolio .itemContainer .overlay h3 {
   margin-bottom: 10px;
