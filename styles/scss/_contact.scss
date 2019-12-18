@@ -54,12 +54,15 @@
         padding: 10px 20px;
         flex-grow: 0;
         transition: $transition;
+        background: rgba(0,0,0,0);
         &:focus {
+            background: rgba(0,0,0,0.2);
             border-color: lighten(#03b197,10%);
         }
     }
     textarea {
         resize: vertical;
+        transition: border-color $transition;
     }
     form {
         display: flex;
@@ -79,6 +82,8 @@
         }
         .button {
             margin-top: 20px;
+            margin: 20px auto;
+            width: 100%;
         }
     }
 }

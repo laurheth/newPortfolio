@@ -1,8 +1,10 @@
-@media (max-width: 750px) {
+@media (max-width: 900px) {
     .wrapper {
         width: 100%;
         padding: 0 20px;
     }
+}
+@media (max-width: 750px) {
     .portfolio {
         .grid {
             display: flex;
@@ -19,10 +21,6 @@
         }
         .flexContainer {
             flex-direction: column-reverse;
-        }
-        button.button {
-            margin: 20px auto;
-            width: 100%;
         }
         .contactInfo {
             i {

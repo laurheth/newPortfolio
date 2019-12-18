@@ -382,13 +382,13 @@ nav li a:hover::after, nav li a:focus::after {
   margin-top: 60px;
 }
 .about .socialLinks a {
-  font-size: 3rem;
-  color: #949494;
+  font-size: 4rem;
+  color: #555555;
   padding: 0 5px;
   transition: 0.3s;
 }
 .about .socialLinks a:hover, .about .socialLinks a:focus {
-  color: #60c7ac;
+  color: #93499f;
 }
 
 .skills {
@@ -525,12 +525,15 @@ nav li a:hover::after, nav li a:focus::after {
   padding: 10px 20px;
   flex-grow: 0;
   transition: 0.3s;
+  background: rgba(0, 0, 0, 0);
 }
 .contact input:focus, .contact textarea:focus {
+  background: rgba(0, 0, 0, 0.2);
   border-color: #04e3c2;
 }
 .contact textarea {
   resize: vertical;
+  transition: border-color 0.3s;
 }
 .contact form {
   display: flex;
@@ -551,11 +554,13 @@ nav li a:hover::after, nav li a:focus::after {
 }
 .contact form .button {
   margin-top: 20px;
+  margin: 20px auto;
+  width: 100%;
 }
 
 footer {
   background: #290e38;
-  color: #6f5b8f;
+  color: #eeeeee;
   padding: 15px 0;
 }
 footer .wrapper {
@@ -589,12 +594,13 @@ footer a:hover, footer a:focus {
   color: #3bafa3;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .wrapper {
     width: 100%;
     padding: 0 20px;
   }
-
+}
+@media (max-width: 750px) {
   .portfolio .grid {
     display: flex;
     flex-direction: column;
@@ -609,10 +615,6 @@ footer a:hover, footer a:focus {
   }
   .contact .flexContainer {
     flex-direction: column-reverse;
-  }
-  .contact button.button {
-    margin: 20px auto;
-    width: 100%;
   }
   .contact .contactInfo i {
     margin: 20px 0;
