@@ -231,15 +231,6 @@ body {
   box-shadow: 0 4px 0 #73397c;
 }
 
-.profilePhoto {
-  display: inline-block;
-  width: 220px;
-  margin: 40px 0;
-}
-.profilePhoto img {
-  border-radius: 50%;
-}
-
 .itemContainer {
   width: 200px;
 }
@@ -379,7 +370,8 @@ nav li a:hover::after, nav li a:focus::after {
   text-align: center;
 }
 .about .socialLinks {
-  margin-top: 60px;
+  margin-top: 20px;
+  text-align: left;
 }
 .about .socialLinks a {
   font-size: 4rem;
@@ -389,6 +381,25 @@ nav li a:hover::after, nav li a:focus::after {
 }
 .about .socialLinks a:hover, .about .socialLinks a:focus {
   color: #93499f;
+}
+.about .flexRow {
+  display: flex;
+  align-items: center;
+}
+.about .profilePhoto {
+  display: inline-block;
+  width: 30%;
+  margin: 40px 0;
+  flex-shrink: 0;
+}
+.about .profilePhoto img {
+  border-radius: 50%;
+}
+.about p {
+  text-align: left;
+}
+.about .column {
+  margin-left: 50px;
 }
 
 .skills {

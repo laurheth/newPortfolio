@@ -1,7 +1,8 @@
 .about {
     text-align: center;
     .socialLinks {
-        margin-top: 60px;
+        margin-top: 20px;
+        text-align: left;
         a {
             font-size: 4rem;
             color: #555555;
@@ -11,5 +12,24 @@
                 color: #93499f;
             }
         }
+    }
+    .flexRow {
+        display: flex;
+        align-items: center;
+    }
+    .profilePhoto {
+        display: inline-block;
+        width: 30%;
+        margin: 40px 0;
+        flex-shrink: 0;
+        img {
+            border-radius: 50%;
+        }
+    }
+    p {
+        text-align: left;
+    }
+    .column {
+        margin-left: 50px;
     }
 }
