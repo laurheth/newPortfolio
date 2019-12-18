@@ -556,6 +556,10 @@ nav li a:hover::after, nav li a:focus::after {
   background: rgba(0, 0, 0, 0.2);
   border-color: #04e3c2;
 }
+.contact input::placeholder, .contact textarea::placeholder {
+  color: #ffffff;
+  opacity: 0.95;
+}
 .contact textarea {
   resize: vertical;
   transition: border-color 0.3s;

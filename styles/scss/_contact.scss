@@ -59,6 +59,10 @@
             background: rgba(0,0,0,0.2);
             border-color: lighten(#03b197,10%);
         }
+        &::placeholder {
+            color: #ffffff;
+            opacity: 0.95;
+        }
     }
     textarea {
         resize: vertical;
