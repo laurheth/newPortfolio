@@ -686,7 +686,6 @@ footer a:hover, footer a:focus {
 }
 @media (max-width: 500px) {
   header nav {
-    position: static;
     width: 100%;
     text-align: center;
   }
@@ -696,8 +695,7 @@ footer a:hover, footer a:focus {
   }
 
   header nav ul {
-    flex-direction: column;
-    width: 100%;
+    display: none;
   }
 
   nav li {
