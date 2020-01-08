@@ -35,6 +35,9 @@ header {
             text-transform: capitalize;
             margin: auto 0;
         }
+        .hamburger {
+            display: none;
+        }
     }
 }
 
@@ -69,7 +72,6 @@ nav li {
             transform: scaleX(1);
         }
     }
-    
 }
 
 .headerContent {

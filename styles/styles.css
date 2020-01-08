@@ -310,6 +310,9 @@ header nav h2 {
   text-transform: capitalize;
   margin: auto 0;
 }
+header nav .hamburger {
+  display: none;
+}
 
 nav li {
   margin: 0 20px;
@@ -689,18 +692,52 @@ footer a:hover, footer a:focus {
     width: 100%;
     text-align: center;
   }
+  header nav .hamburger {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 60;
+  }
+  header nav .hamburger button {
+    display: block;
+    min-width: 60px;
+    min-height: 60px;
+    background: none;
+    color: white;
+    text-shadow: 0 0 4px black;
+    border: none;
+    transition: 0.3s;
+  }
+  header nav .hamburger button.open {
+    transform: rotateZ(90deg);
+  }
+  header nav .hamburger button:hover, header nav .hamburger button:focus {
+    color: #02b197;
+  }
 
   header {
     flex-direction: column;
   }
 
-  header nav ul {
-    display: none;
+  .menu {
+    position: fixed;
+    z-index: 50;
+    transform: translateY(-50%) scaleY(0);
+    flex-direction: column;
+    width: 100%;
+    background: #251244;
+    border-bottom: 3px white solid;
+    transition: 0.3s;
+  }
+  .menu.open {
+    transform: translateY(0) scaleY(1);
   }
 
   nav li {
     width: 100%;
     margin: 0;
+    border-bottom: rgba(255, 255, 255, 0.5) 0.5px solid;
   }
 
   .headerContent {
