@@ -11,4 +11,10 @@ $(document).ready(function() {
         $('.menu').toggleClass('open');
     });
 
+    // on clicking something in the menu, close the menu
+    $('.menu a').on('click', function() {
+        $('.menu').removeClass('open');
+        $('.hamburgerButton').removeClass('open');
+    });
+
 });
