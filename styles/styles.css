@@ -589,6 +589,24 @@ nav li a:hover::after, nav li a:focus::after {
   margin: 20px auto;
   width: 100%;
 }
+.contact .contactResult {
+  text-align: center;
+  margin: 30px 0;
+}
+.contact .contactResult p {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+.contact .contactResult p a {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.contact .contactResult p a:hover, .contact .contactResult p a:focus {
+  color: #02b197;
+}
+.contact .contactResult + .flexContainer {
+  margin-top: 0px;
+}
 
 footer {
   background: #290e38;

@@ -209,6 +209,7 @@
             <div class="wrapper">
                 <h2>Get in touch</h2>
                 <div class="fancyLine greenLine"></div>
+                <div id="contactResultDiv"></div>
                 <div class="flexContainer">
                     <ul class="contactInfo">
                         <li>
@@ -230,13 +231,13 @@
                             </div>
                         </li>
                     </ul>
-                    <form action="http://www.focuspocus.io/magic/ef0300962c08051a7649d5002d090256" method="POST" autocomplete="off">
+                    <form action="contact.php" method="POST" autocomplete="off">
                         <label class="visuallyHidden" for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
                         <label class="visuallyHidden"  for="email">Email</label>
-                        <input type="email" name="_replyto" id="email" placeholder="E-mail">
+                        <input type="email" name="_replyto" id="email" placeholder="E-mail" required>
                         <label class="visuallyHidden"  for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Message..."></textarea>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Message..." required></textarea>
                         <button class="button" type="submit" value="Send">Send</button>
                     </form>
                 </div>
@@ -264,7 +265,7 @@
                 </a>
             </div>
             <div class="right">
-                <p>2020. All Rights Reserved.</p>
+                <p>2021. All Rights Reserved.</p>
                 <p>Hero photo by Colin Maynard.</p>
             </div>
         </div>

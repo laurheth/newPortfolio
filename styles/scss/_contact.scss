@@ -90,4 +90,22 @@
             width: 100%;
         }
     }
+    .contactResult {
+        text-align: center;
+        margin: 30px 0;
+        p {
+            font-size: 2.5rem;
+            display: inline-block;
+            a {
+                text-decoration: underline;
+                transition: $transition;
+            }
+            a:hover, a:focus {
+                color: #02b197;
+            }
+        }
+        + .flexContainer {
+            margin-top: 0px;
+        }
+    }
 }
